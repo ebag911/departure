@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Character Sheet</title>
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="container site-nav">
+            <a href=#>Departure</a>
+            <nav class="site-nav-top">
+                <ul role="list" class="site-nav-list">
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </nav>
+        </div>
+    </header>
+    <!-- SHEET NAV -->
+    <div class="container sheet-nav">
+        <nav class="sheet-nav">
+            <ul role="list" class="sheet-nav-list">
+                <li><a href="#Background">Background</a></li>
+                <li><a href="#Characteristics">Characteristics</a></li>
+                <li><a href="#Lifestyle">Lifestyle</a></li>
+                <li><a href="#Combat">Combat</a></li>
+                <li><a href="#Gear">Gear</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="character-sheets">
+        <!-- BACKGROUND -->
+        <article class="background sheet">
+            <header class="article-header">
+                <h2>Background</h2>
+            </header>
+            <section class="background">
+                <div class="background-label"><label for="ancestry">Ancestry</label><input class="background-input"
+                        type="text" id="ancestry" name="ancestry"></div>
+                <div class="background-label"><label for="home">Home</label><input class="background-input" type="text"
+                        id="home" name="home"></div>
+                <div class="background-label"><label for="continent">Continent</label><input class="background-input"
+                        type="text" id="continent" name="continent"></div>
+                <div class="background-label"><label for="upbringing">Upbringing</label><input class="background-input"
+                        type="text" id="upbringing" name="upbringing"></div>
+                <div class="background-label"><label for="languages">Languages</label><input class="background-input"
+                        type="text" id="languages" name="languages"></div>
+                <div class="background-label"><label for="birthday">Birthday</label><input class="background-input"
+                        type="text" id="birthday" name="birthday"></div>
+                <div class="background-label"><label for="secrets">Secrets</label><input class="background-input"
+                        type="text" id="secrets" name="secrets"></div>
+            </section>
+            <section class="grid2 connections">
+                <section class="connections-left">
+                    <div class="friends connection-items">
+                        <h3>Friends</h3>
+                        <ul role="list" class="friends-list connection-list">
+                            <li class="friend1"> <input type="text" id="friend1" name="friend1"></li>
+                            <li class="friend2"> <input type="text" id="friend2" name="friend2"></li>
+                            <li class="friend3"> <input type="text" id="friend3" name="friend3"></li>
+                            <li class="friend4"> <input type="text" id="friend4" name="friend4"></li>
+                            <li class="friend5"> <input type="text" id="friend5" name="friend5"></li>
+                            <li class="friend6"> <input type="text" id="friend6" name="friend6"></li>
+                            <li class="friend7"> <input type="text" id="friend7" name="friend7"></li>
+                            <li class="friend8"> <input type="text" id="friend8" name="friend8"></li>
+                            <li class="friend9"> <input type="text" id="friend9" name="friend9"></li>
+                            <li class="friend10"> <input type="text" id="friend10" name="friend10"></li>
+                        </ul>
+                    </div>
+                    <div class="family connection-items">
+                        <h3>Family</h3>
+                        <ul role="list" class="family-list connection-list" id="family-list" name="family-list">
+                            <li class="family1"> <input type="text" id="family1" name="family1"></li>
+                            <li class="family2"> <input type="text" id="family2" name="family2"></li>
+                            <li class="family3"> <input type="text" id="family3" name="family3"></li>
+                            <li class="family4"> <input type="text" id="family4" name="family4"></li>
+                            <li class="family5"> <input type="text" id="family5" name="family5"></li>
+                            <li class="family6"> <input type="text" id="family6" name="family6"></li>
+                        </ul>
+                    </div>
+                    <div class="lover connection-items">
+                        <h3>Lovers</h3>
+                        <ul role="list" class="lover-list connection-list">
+                            <li class="lover1"> <input type="text" id="lover1" name="lover1"></li>
+                            <li class="lover2"> <input type="text" id="lover2" name="lover2"></li>
+                            <li class="lover3"> <input type="text" id="lover3" name="lover3"></li>
+                        </ul>
+                    </div>
+                    <div class="best-friends connection-items">
+                        <h3>Best Friends</h3>
+                        <ul role="list" class="best-friends-list connection-list">
+                            <li class="best-friend1"> <input type="text" id="best-friend1" name="best-friend1"></li>
+                            <li class="best-friend2"> <input type="text" id="best-friend2" name="best-friend2"></li>
+                            <li class="best-friend3"> <input type="text" id="best-friend3" name="best-friend3"></li>
+                        </ul>
+                    </div>
+                    <div class="teams-orgs connection-items">
+                        <h3>Team & Organizations</h3>
+                        <ul role="list" class="teams-orgs-list connection-list">
+                            <li class="teams-orgs-1"> <input type="text" id="teams-orgs1" name="teams-orgs1"></li>
+                            <li class="teams-orgs2"> <input type="text" id="teams-orgs2" name="teams-orgs2"></li>
+                            <li class="teams-orgs3"> <input type="text" id="teams-orgs3" name="teams-orgs3"></li>
+                        </ul>
+                    </div>
+                    <div class="titles-aliases connection-items">
+                        <h3>Titles & Aliases</h3>
+                        <ul role="list" class="titles-aliases-list connection-list" id="titles-aliases"
+                            name="title-aliases">
+                            <li class="title-alias1"> <input type="text" id="title-alias1" name="title-alias1"></li>
+                            <li class="title-alias2"> <input type="text" id="title-alias2" name="title-alias2"></li>
+                            <li class="title-alias3"> <input type="text" id="title-alias3" name="title-alias3"></li>
+                        </ul>
+                    </div>
+                    <div class="alliances connection-items">
+                        <h3>Alliances</h3>
+                        <ul role="list" class="alliances-list connection-list">
+                            <li class="ally1"> <input type="text" id="ally1" name="ally1"></li>
+                            <li class="ally2"> <input type="text" id="ally2" name="ally2"></li>
+                            <li class="ally3"> <input type="text" id="ally3" name="ally3"></li>
+                            <li class="ally4"> <input type="text" id="ally4" name="ally4"></li>
+                        </ul>
+                    </div>
+                    <div class="patrons connection-items">
+                        <h3>Patrons</h3>
+                        <ul role="list" class="patrons-list connection-list" id="patrons" name="patrons">
+                            <li class="patron1"> <input type="text" id="patron1" name="lover1"></li>
+                            <li class="patron2"> <input type="text" id="patron2" name="patron2"></li>
+                            <li class="patron3"> <input type="text" id="patron3" name="patron3"></li>
+                        </ul>
+                    </div>
+                    <div class="rivals-nemesi connection-items">
+                        <h3>Rivals & Nemesis</h3>
+                        <ul role="list" class="rivals-nemesi-list connection-list" id="rivals-nemesi"
+                            name="rivals-nemesi">
+                            <li class="rival-nemisis1"> <input type="text" id="rival-nemisis1" name="rival-nemisis1">
+                            </li>
+                            <li class="rival-nemisis2"> <input type="text" id="rival-nemisis2" name="rival-nemisis2">
+                            </li>
+                            <li class="rival-nemisis3"> <input type="text" id="rival-nemisis3" name="rival-nemisis3">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="favor-grudge-debt connection-items">
+                        <h3>Favors, Grudges, & Debts<h3>
+                                <ul role="list" class="favor-grudge-debt-list connection-list">
+                                    <li class="fgd1"> <input type="text" id="fgd1" name="fgd1"></li>
+                                    <li class="fgd2"> <input type="text" id="fgd2" name="fgd2"></li>
+                                    <li class="fgd3"> <input type="text" id="fgd3" name="fgd3"></li>
+                                    <li class="fgd4"> <input type="text" id="fgd4" name="fgd4"></li>
+                                    <li class="fgd5"> <input type="text" id="fgd5" name="fgd5"></li>
+                                    <li class="fgd6"> <input type="text" id="fgd6" name="fgd6"></li>
+                                </ul>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <!-- CHARCTERISTICS -->
+        <article class="characteristics sheet">
+            <header class="article-header">
+                <h3>Characteristics</h3>
+            </header>
+            <section class="grid2 characteristics-top">
+                <section class="character-info-left">
+                    <div class=""><label class="character-info" for="player">Player</label><input
+                            class="characteristics-input" type="text" id="player" name="player"></div>
+                    <div class=""><label class="character-info" for="character">Character</label><input
+                            class="characteristics-input" type="text" id="character" name="character"></div>
+                    <div class=""><label class="character-info" for="physical-features">Physical Features</label><input
+                            class="characteristics-input" type="text" id="physical-features" name="physical-features"></div>
+                    <ul role="list" class="class-list character-info">
+                        <li><label class="classes" for="class1">Class 1</label><input class="characteristics-input"
+                                type="text" id="class1" name="class1"></li>
+                        <li><label class="classes" for="class2">Class 2</label><input class="characteristics-input"
+                                type="text" id="class2" name="class2"></li>
+                        <li><label class="classes" for="class3">Class 3</label><input class="characteristics-input"
+                                type="text" id="class3" name="class3"></li>
+                        <li><label class="classes" for="class4">Class 4</label><input class="characteristics-input"
+                                type="text" id="class4" name="class4"></li>
+                        <li><label class="classes" for="class5">Class 5</label><input class="characteristics-input"
+                                type="text" id="class5" name="class5"></li>
+                        <li><label class="classes" for="class6">Class 6</label><input class="characteristics-input"
+                                type="text" id="class6" name="class6"></li>
+                    </ul>
+                </section>
+                <section class="character-info-right">
+                    <label for="character-photo"></label><input type="file" name="character-photo" id="character-photo">
+                </section>
+            </section>
+            <section class="characteristics-bottom grid2">
+                <section class="characteristics-left">
+                    <div class="physical-traits characteristic-items">
+                        <h3>Physical Traits</h3>
+                        <ul role="list" class="physical-list connection-list">
+                            <li class="physical-trait1"><input type="text" id="physical-trait1"
+                                    name="physical-trait1"><label for="physical-traits1"></label></li>
+                            <li class="physical-trait2"><input type="text" id="physical-trait2"
+                                    name="physical-trait2"><label for="physical-traits2"></label></li>
+                            <li class="physical-trait3"><input type="text" id="physical-trait3"
+                                    name="physical-trait3"><label for="physical-traits3"></label></li>
+                            <li class="physical-trait4"><input type="text" id="physical-trait4"
+                                    name="physical-trait4"><label for="physical-traits4"></label></li>
+                            <li class="physical-trait5"><input type="text" id="physical-trait5"
+                                    name="physical-trait5"><label for="physical-traits5"></label></li>
+                            <li class="physical-trait6"><input type="text" id="physical-trait6"
+                                    name="physical-trait6"><label for="physical-traits6"></label></li>
+                            <li class="physical-trait7"><input type="text" id="physical-trait7"
+                                    name="physical-trait7"><label for="physical-traits7"></label></li>
+                            <li class="physical-trait8"><input type="text" id="physical-trait8"
+                                    name="physical-trait8"><label for="physical-traits8"></label></li>
+                        </ul>
+                    </div>
+                    <div class="hobbies-pastimes connection-items">
+                        <h3>Hobbies & Pastimes<h3>
+                                <ul role="list" class="hobbies-pastimes-list connection-list">
+                                    <li class="hobbies-pastimes1"> <input type="text" id="hobbies-pastimes1"
+                                            name="hobbies-pastimes1"></li>
+                                    <li class="hobbies-pastimes2"> <input type="text" id="hobbies-pastimes2"
+                                            name="hobbies-pastimes2"></li>
+                                    <li class="hobbies-pastimes3"> <input type="text" id="hobbies-pastimes3"
+                                            name="hobbies-pastimes3"></li>
+                                    <li class="hobbies-pastimes4"> <input type="text" id="hobbies-pastimes4"
+                                            name="hobbies-pastimes4"></li>
+                                    <li class="hobbies-pastimes5"> <input type="text" id="hobbies-pastimes5"
+                                            name="hobbies-pastimes5"></li>
+                                    <li class="hobbies-pastimes6"> <input type="text" id="hobbies-pastimes6"
+                                            name="hobbies-pastimes6"></li>
+                                </ul>
+                    </div>
+                    <div class="biases-prejudices connection-items">
+                        <h3>Biases & Prejudices<h3>
+                                <ul role="list" class="biases-prejudices-list connection-list">
+                                    <li class="biases-prejudices1"> <input type="text" id="biases-prejudices1"
+                                            name="biases-prejudices1"></li>
+                                    <li class="biases-prejudices2"> <input type="text" id="biases-prejudices2"
+                                            name="biases-prejudices2"></li>
+                                    <li class="biases-prejudices3"> <input type="text" id="biases-prejudices3"
+                                            name="biases-prejudices3"></li>
+                                    <li class="biases-prejudices4"> <input type="text" id="biases-prejudices4"
+                                            name="biases-prejudices4"></li>
+                                    <li class="biases-prejudices5"> <input type="text" id="biases-prejudices5"
+                                            name="biases-prejudices5"></li>
+                                    <li class="biases-prejudices6"> <input type="text" id="biases-prejudices6"
+                                            name="biases-prejudices6"></li>
+                                </ul>
+                    </div>
+                    <div class="addictions-quirks connection-items">
+                        <h3>Addictions & Quirks<h3>
+                                <ul role="list" class="addictions&quirks-list connection-list">
+                                    <li class="addictions-quirks1"> <input type="text" id="addictions-quirks1"
+                                            name="addictions-quirks1"></li>
+                                    <li class="addictions-quirks2"> <input type="text" id="addictions-quirks2"
+                                            name="addictions-quirks2"></li>
+                                    <li class="addictions-quirks3"> <input type="text" id="addictions-quirks3"
+                                            name="addictions-quirks3"></li>
+                                    <li class="addictions-quirks4"> <input type="text" id="addictions-quirks4"
+                                            name="addictions-quirks4"></li>
+                                </ul>
+                    </div>
+                </section>
+                <section class="characteristics-right">
+                    <div class="personality-traits characteristic-items">
+                        <h3>Personality Traits</h3>
+                        <ul role="list" class="personality-list connection-list">
+                            <li class="personality-trait1"><input type="text" id="personality-trait1"
+                                    name="personality-trait1"><label for="personality-traits1"></label></li>
+                            <li class="personality-trait2"><input type="text" id="personality-trait2"
+                                    name="personality-trait2"><label for="personality-traits2"></label></li>
+                            <li class="personality-trait3"><input type="text" id="personality-trait3"
+                                    name="personality-trait3"><label for="personality-traits3"></label></li>
+                            <li class="personality-trait4"><input type="text" id="personality-trait4"
+                                    name="personality-trait4"><label for="personality-traits4"></label></li>
+                            <li class="personality-trait5"><input type="text" id="personality-trait5"
+                                    name="personality-trait5"><label for="personality-traits5"></label></li>
+                            <li class="personality-trait6"><input type="text" id="personality-trait6"
+                                    name="personality-trait6"><label for="personality-traits6"></label></li>
+                            <li class="personality-trait7"><input type="text" id="personality-trait7"
+                                    name="personality-trait7"><label for="personality-traits7"></label></li>
+                            <li class="personality-trait8"><input type="text" id="personality-trait8"
+                                    name="personality-trait8"><label for="personality-traits8"></label></li>
+                        </ul>
+                    </div>
+                    <div class="goals-dreams connection-items">
+                        <h3>Goals & Dreams<h3>
+                                <ul role="list" class="goals-dreams-list connection-list">
+                                    <li class="goals-dreams1"> <input type="text" id="goals-dreams1"
+                                            name="goals-dreams1"></li>
+                                    <li class="goals-dreams2"> <input type="text" id="goals-dreams2"
+                                            name="goals-dreams2"></li>
+                                    <li class="goals-dreams3"> <input type="text" id="goals-dreams3"
+                                            name="goals-dreams3"></li>
+                                    <li class="goals-dreams4"> <input type="text" id="goals-dreams4"
+                                            name="goals-dreams4"></li>
+                                    <li class="goals-dreams5"> <input type="text" id="goals-dreams5"
+                                            name="goals-dreams5"></li>
+                                    <li class="goals-dreams6"> <input type="text" id="goals-dreams6"
+                                            name="goals-dreams6"></li>
+                                </ul>
+                    </div>
+                    <div class="regrets-remorses connection-items">
+                        <h3>Regrets & Remorse<h3>
+                                <ul role="list" class="regreats-remorse-list connection-list">
+                                    <li class="regrets-remorse1"> <input type="text" id="regrets-remorse1"
+                                            name="regrets-remorse1"></li>
+                                    <li class="regrets-remorse2"> <input type="text" id="regrets-remorse2"
+                                            name="regrets-remorse2"></li>
+                                    <li class="regrets-remorse3"> <input type="text" id="regrets-remorse3"
+                                            name="regrets-remorse3"></li>
+                                    <li class="regrets-remorse4"> <input type="text" id="regrets-remorse4"
+                                            name="regrets-remorse4"></li>
+                                    <li class="regrets-remorse5"> <input type="text" id="regrets-remorse5"
+                                            name="regrets-remorse5"></li>
+                                    <li class="regrets-remorse6"> <input type="text" id="regrets-remorse6"
+                                            name="regrets-remorse6"></li>
+                                </ul>
+                    </div>
+                    <div class="fears-phobias connection-items">
+                        <h3>Fears & Phobias<h3>
+                                <ul role="list" class="fears-phobias-list connection-list">
+                                    <li class="fears-phobias1"> <input type="text" id="fears-phobias1"
+                                            name="fears-phobias1"></li>
+                                    <li class="fears-phobias2"> <input type="text" id="fears-phobias2"
+                                            name="fears-phobias2"></li>
+                                    <li class="fears-phobias3"> <input type="text" id="fears-phobias3"
+                                            name="fears-phobias3"></li>
+                                    <li class="fears-phobias4"> <input type="text" id="fears-phobias4"
+                                            name="fears-phobias4"></li>
+                                </ul>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <!-- LIFESTYLE -->
+        <article class="lifestyle sheet">
+            <header class="article-header">
+                <h2>Lifestyle</h2>
+            </header>
+            <section class="lifestyle">
+                <section class="standings grid3">
+                    <section class="current-lifestyle">
+                        <h3>Lifestyle</h3>
+                        <label for="current-lifestlye">Current Lifestyle</label>
+                        <input type="text" name="current-lifestyle" id="current-lifestlye">
+                        <ul role="list">
+                            <li><label for="weekly-expense">Weekly Expense</label><input type="text"
+                                    name="weekly-expense" id="weekly-expense"></li>
+                            <li><label for="monthly-expense">Monthly Expense</label><input type="text"
+                                    name="monthly-expense" id="monthly-expense"></li>
+                            <li><label for="current-stay">Current Stay</label><input type="text" name="current-stay"
+                                    id="current-stay"></li>
+                        </ul>
+                    </section>
+                    <section class="wealth">
+                        <h3>Wealth Standing</h3>
+                        <label for="current-wealth">Current Standing</label>
+                        <input type="text" name="current-wealth" id="current-wealth">
+                        <ul role="list">
+                            <li><label for="spend-die">Spend Die</label><input type="text" name="spend-die"
+                                    id="spend-die"></li>
+                            <li><label for="spend-die-checkbox"></label><input type="checkbox" name="spend-die-checkbox"
+                                    id="spend-die-checkbox"><label for="spend-recharge">Recharge</label><input
+                                    type="text" name="spend-recharge" id="spend-recharge"></li>
+                            <li><label for="wealth-desired-lifestyle">Desired Lifestyle</label><input type="text"
+                                    name="wealth-desired-lifestyle" id="wealth-desired-lifestyle"></li>
+                        </ul>
+                    </section>
+                    <section class="social">
+                        <h3>Social Standing</h3>
+                        <label for="current-social">Current Standing</label>
+                        <input type="text" name="current-social" id="current-social">
+                        <ul role="list">
+                            <li><label for="influence-die">Influence Die</label><input type="text" name="influence-die"
+                                    id="influence-die"></li>
+                            <li><label for="influence-die-checkbox"></label><input type="checkbox"
+                                    name="influence-die-checkbox" id="influence-die-checkbox"><label
+                                    for="influence-recharge">Recharge</label><input type="text"
+                                    name="influence-recharge" id="influence-recharge"></li>
+                            <li><label for="social-desired-lifestyle">Desired Lifestyle</label><input type="text"
+                                    name="social-desired-lifestyle" id="social-desired-lifestyle"></li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="lifestyle-effects">
+                    <h4>Lifestyle Effects</h4>
+                    <section class="grid2">
+                        <div class="lifestyle-effect1"><label for="lifestyle-effect1">Lifestyle Effect 1</label><input
+                                type="text" name="lifestyle-effect1" id="lifestyle-effect1"></div>
+                        <div class="lifestyle-effect2"><label for="lifestyle-effect2">Lifestyle Effect 2</label><input
+                                type="text" name="lifestyle-effect2" id="lifestyle-effect2"></div>
+                        <div class="lifestyle-effect3"><label for="lifestyle-effect3">Lifestyle Effect 3</label><input
+                                type="text" name="lifestyle-effect3" id="lifestyle-effect3"></div>
+                        <div class="lifestyle-effect4"><label for="lifestyle-effect4">Lifestyle Effect 4</label><input
+                                type="text" name="lifestyle-effect4" id="lifestyle-effect4"></div>
+                        <div class="lifestyle-effect5"><label for="lifestyle-effect5">Lifestyle Effect 5</label><input
+                                type="text" name="lifestyle-effect5" id="lifestyle-effect5"></div>
+                        <div class="lifestyle-effect6"><label for="lifestyle-effect6">Lifestyle Effect 6</label><input
+                                type="text" name="lifestyle-effect6" id="lifestyle-effect6"></div>
+                        <div class="lifestyle-effect7"><label for="lifestyle-effect7">Lifestyle Effect 7</label><input
+                                type="text" name="lifestyle-effect7" id="lifestyle-effect7"></div>
+                        <div class="lifestyle-effect8"><label for="lifestyle-effect8">Lifestyle Effect 8</label><input
+                                type="text" name="lifestyle-effect8" id="lifestyle-effect8"></div>
+                    </section>
+                </section>
+            </section>
+            <section class="coins grid5">
+                <section class="copper">
+                    <h4>Copper Pieces</h4>
+                    <h5>50 CP = 1 SP</h5>
+                    <input type="number" name="cp-purse" id="cp-purse">
+                    <label for="cp-purse"># of CP</label>
+                    <input type="number" name="cp-bank" id="cp-bank">
+                    <label for="cp-bank"># of CP</label>
+                </section>
+                <section class="silver">
+                    <h4>Silver Pieces</h4>
+                    <h5>20 SP = 1 GP</h5>
+                    <input type="number" name="sp-purse" id="sp-purse">
+                    <label for="sp-purse"># of SP</label>
+                    <input type="number" name="sp-bank" id="sp-bank">
+                    <label for="sp-bank"># of SP</label>
+                </section>
+                <section class="purse">
+                    <h3>Coin Purse</h3>
+                    <input type="number" name="total-purse" id="total-purse">
+                    <label for="total-purse">Total Coins</label>
+                    <h3>Banked Wealth</h3>
+                    <input type="number" name="total-bank" id="total-bank">
+                    <label for="total-bank">Total Coins</label>
+                </section>
+                <section class="gold">
+                    <h4>Gold Pieces</h4>
+                    <h5>1 GP = 1K CP</h5>
+                    <input type="number" name="gp-purse" id="gp-purse">
+                    <label for="gp-purse"># of GP</label>
+                    <input type="number" name="gp-bank" id="gp-bank">
+                    <label for="gp-bank"># of GP</label>
+                </section>
+                <section class="platnium">
+                    <h4>Platnium Pieces</h4>
+                    <h5>1 PP = 20 GP</h5>
+                    <input type="number" name="pp-purse" id="pp-purse">
+                    <label for="pp-purse"># of PP</label>
+                    <input type="number" name="pp-bank" id="pp-bank">
+                    <label for="pp-bank"># of PP</label>
+                </section>
+            </section>
+            <h2>Travel</h2>
+            <section class="travel grid2">
+                <section class="standard-travel">
+                    <h5>Standard Travel</h5>
+                    <ul role="list" class="grid-move">
+                        <li><label for="stroll">Stroll</label>
+                            <h6>Step+1</h6><input type="number" name="stroll" id="stroll">
+                        </li>
+                        <li>+1</li>
+                        <li><label for="walk">Walk</label><input type="number" name="walk" id="walk"></li>
+                        <li>+1</li>
+                        <li><label for="haste">Haste</label><input type="number" name="haste" id="haste"></li>
+                    </ul>
+                </section>
+                <section class="encumbered-travel">
+                    <label for="encumbered">Encumbered Travel</label><input type="checkbox" name="encumbered"
+                        id="encumbered">
+                    <label for="h-encumbered">Heavy</label><input type="checkbox" name="h-encumbered" id="h-encumbered">
+                    <div class="encumbered">
+                        <ul role="list" class="grid-move">
+                            <li><label for="stroll">Stroll</label>
+                                <h6>Step-1</h6><input type="number" name="stroll" id="stroll">
+                            </li>
+                            <li>1+</li>
+                            <li><label for="walk">Walk</label><input type="number" name="walk" id="walk"></li>
+                            <li>1+</li>
+                            <li><label for="haste">Haste</label><input type="number" name="haste" id="haste"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="wild-camping">
+                    <h5>Wilderness Camping</h5>
+                    <ul role="list" class="">
+                        <li><input type="checkbox" name="bedroll" id="bedroll"><label for="bedroll">Bedroll</label></li>
+                        <li><input type="checkbox" name="tent" id="tent"><label for="tent">Tent</label></li>
+                        <li><input type="checkbox" name="fire" id="fire"><label for="fire">Fire</label></li>
+                        <li><input type="checkbox" name="good-nights-rest" id="good-nights-rest"><label
+                                for="good-nights-rest">Good Nights Rest</label></li>
+                        <li><input type="checkbox" name="rest-check" id="rest-check"><label for="rest-check">Rest
+                                Check</label><label for="rest-roll">1d</label><input type="number" name="rest-roll"
+                                id="rest-roll"></li>
+                    </ul>
+                </section>
+                <section class="camping-activities">
+                    <ul role="list" class="">
+                        <li><label for="camp-act1">Camping Activity 1</label><input type="text" name="camp-act1"
+                                id="camp-act1"><label for="camp-act-check1"></label><input type="checkbox"
+                                name="camp-act-check1" id="camp-act-check1"></li>
+                        <li><label for="camp-act2">Camping Activity 2</label><input type="text" name="camp-act2"
+                                id="camp-act2"><label for="camp-act-check2"></label><input type="checkbox"
+                                name="camp-act-check2" id="camp-act-check2"></li>
+                        <li><label for="camp-act3">Camping Activity 3</label><input type="text" name="camp-act3"
+                                id="camp-act3"><label for="camp-act-check3"></label><input type="checkbox"
+                                name="camp-act-check3" id="camp-act-check3"></li>
+                        <li><label for="camp-act4">Camping Activity 4</label><input type="text" name="camp-act4"
+                                id="camp-act4"><label for="camp-act-check4"></label><input type="checkbox"
+                                name="camp-act-check4" id="camp-act-check4"></li>
+                        <li><label for="camp-act5">Camping Activity 5</label><input type="text" name="camp-act5"
+                                id="camp-act5"><label for="camp-act-check5"></label><input type="checkbox"
+                                name="camp-act-check5" id="camp-act-check5"></li>
+                        <li><label for="camp-act6">Camping Activity 6</label><input type="text" name="camp-act6"
+                                id="camp-act6"><label for="camp-act-check6"></label><input type="checkbox"
+                                name="camp-act-check6" id="camp-act-check6"></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="training">
+                <section class="training1">
+                    <input type="text" name="focus1" id="focus1">
+                    <input type="number" name="days1" id="days1">
+                    <input type="number" name="weeks1" id="weeks1">
+                    <label for="focus1">Focus</label>
+                    <label for="days1">Days</label>
+                    <label for="weeks1">Weeks</label>
+                </section>
+                <section class="training2">
+                    <input type="text" name="focus2" id="focus2">
+                    <input type="number" name="days2" id="days2">
+                    <input type="number" name="weeks2" id="weeks2">
+                    <label for="focus2">Focus</label>
+                    <label for="days2">Days</label>
+                    <label for="weeks2">Weeks</label>
+                </section>
+            </section>
+            <section class="renown">
+                <h4>Renown</h4>
+                <section class="renown-left">
+                    <ul role="list" class="location-organization-list-left">
+                        <li>Location / Organization</li>
+                        <li><input type="text" name="location-organization1" id="location-organization1"><label
+                                for="location-organization1"></label></li>
+                        <li><input type="text" name="location-organization3" id="location-organization3"><label
+                                for="location-organization3"></label></li>
+                        <li><input type="text" name="location-organization5" id="location-organization5"><label
+                                for="location-organization5"></label></li>
+                        <li><input type="text" name="location-organization7" id="location-organization7"><label
+                                for="location-organization7"></label></li>
+                        <li><input type="text" name="location-organization9" id="location-organization9"><label
+                                for="location-organization9"></label></li>
+                    </ul>
+                    <ul role="list" class="renown-level-list-left">
+                        <li>Level</li>
+                        <li><input type="number" name="renown-level1" id="renown-level1"><label
+                                for="renown-level1"></label></li>
+                        <li><input type="number" name="renown-level3" id="renown-level3"><label
+                                for="renown-level3"></label></li>
+                        <li><input type="number" name="renown-level5" id="renown-level5"><label
+                                for="renown-level5"></label></li>
+                        <li><input type="number" name="renown-level7" id="renown-level7"><label
+                                for="renown-level7"></label></li>
+                        <li><input type="number" name="renown-level9" id="renown-level9"><label
+                                for="renown-level9"></label></li>
+                    </ul>
+                </section>
+                <section class="renown-right">
+                    <ul role="list" class="location-organization-list">
+                        <li>Location / Organization</li>
+                        <li><input type="text" name="location-organization2" id="location-organization2"><label
+                                for="location-organization2"></label></li>
+                        <li><input type="text" name="location-organization4" id="location-organization4"><label
+                                for="location-organization4"></label></li>
+                        <li><input type="text" name="location-organization6" id="location-organization6"><label
+                                for="location-organization6"></label></li>
+                        <li><input type="text" name="location-organization8" id="location-organization8"><label
+                                for="location-organization8"></label></li>
+                        <li><input type="text" name="location-organization10" id="location-organization10"><label
+                                for="location-organization10"></label></li>
+                    </ul>
+                    <ul role="list" class="renown-level-list">
+                        <li>Level</li>
+                        <li><input type="number" name="renown-level2" id="renown-level2"><label
+                                for="renown-level2"></label></li>
+                        <li><input type="number" name="renown-level4" id="renown-level4"><label
+                                for="renown-level4"></label></li>
+                        <li><input type="number" name="renown-level6" id="renown-level6"><label
+                                for="renown-level6"></label></li>
+                        <li><input type="number" name="renown-level8" id="renown-level8"><label
+                                for="renown-level8"></label></li>
+                        <li><input type="number" name="renown-level10" id="renown-level10"><label
+                                for="renown-level10"></label></li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+        <!-- COMBAT -->
+        <article class="combat sheet">
+            <header class="article-header">
+                <h2>Combat</h2>
+            </header>
+            <section class="misc">
+                <div class="inspiration">
+                    <h3>Inspiration</h3>
+                    <input type="checkbox" name="insp1" id="insp1"><label for="insp1"></label>
+                    <input type="checkbox" name="insp2" id="insp2"><label for="insp2"></label>
+                    <input type="checkbox" name="insp3" id="insp3"><label for="insp3"></label>
+                    <input type="checkbox" name="insp4" id="insp4"><label for="insp4"></label>
+                    <input type="checkbox" name="ins5p" id="insp5"><label for="insp5"></label>
+                    <input type="checkbox" name="insp6" id="insp6"><label for="insp6"></label>
+                    <input type="checkbox" name="insp7" id="insp7"><label for="insp7"></label>
+                    <input type="checkbox" name="ins8p" id="insp8"><label for="insp8"></label>
+                    <input type="checkbox" name="insp9" id="insp9"><label for="insp9"></label>
+                    <input type="checkbox" name="insp10" id="insp10"><label for="insp10"></label>
+                    <input type="checkbox" name="insp11" id="insp11"><label for="insp11"></label>
+                </div>
+                <div class="movement">
+                    <h3>Movement</h3>
+                    <ul role="list">
+                        <li><label for="step">Step</label><input type="number" name="step" id="step"></li>
+                        <li>x2</li>
+                        <li><label for="dash">Dash</label><input type="number" name="dash" id="dash"></li>
+                        <li>x2.5</li>
+                        <li><label for="run">Run</label><input type="number" name="run" id="run"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="defence">
+                <h2>Defense</h2>
+                <section class="equipped">
+                    <div class="equipped-left">
+                        <ul role="list" class="source-list-left">
+                            <li>Source</li>
+                            <li><input type="text" name="source1" id="source1"><label for="source1"></label></li>
+                            <li><input type="text" name="source3" id="source3"><label for="source3"></label></li>
+                            <li><input type="text" name="source5" id="source5"><label for="source5"></label></li>
+                            <li><input type="text" name="source7" id="source7"><label for="source7"></label></li>
+                            <li><input type="text" name="source9" id="source9"><label for="source9"></label></li>
+                            <li><input type="text" name="source11" id="source11"><label for="source11"></label></li>
+                            <li><input type="text" name="source13" id="source13"><label for="source13"></label></li>
+                        </ul>
+                        <ul role="list" class="break-list-left">
+                            <li>Break</li>
+                            <li><input type="number" name="break1" id="break1"><label for="break1"></label></li>
+                            <li><input type="number" name="break3" id="break3"><label for="break3"></label></li>
+                            <li><input type="number" name="break5" id="break5"><label for="break5"></label></li>
+                            <li><input type="number" name="break7" id="break7"><label for="break7"></label></li>
+                            <li><input type="number" name="break9" id="break9"><label for="break9"></label></li>
+                            <li><input type="number" name="break11" id="break11"><label for="break11"></label></li>
+                            <li><input type="number" name="break13" id="break13"><label for="break13"></label></li>
+                        </ul>
+                        <ul role="list" class="armor-list-left">
+                            <li>Armor</li>
+                            <li><input type="number" name="armor1" id="armor1"><label for="armor1"></label></li>
+                            <li><input type="number" name="armor3" id="armor3"><label for="armor3"></label></li>
+                            <li><input type="number" name="armor5" id="armor5"><label for="armor5"></label></li>
+                            <li><input type="number" name="armor7" id="armor7"><label for="armor7"></label></li>
+                            <li><input type="number" name="armor9" id="armor9"><label for="armor9"></label></li>
+                            <li><input type="number" name="armor11" id="armor11"><label for="armor11"></label></li>
+                            <li><input type="number" name="armor13" id="armor13"><label for="armor13"></label></li>
+                        </ul>
+                        <ul role="list" class="resilience-list-left">
+                            <li>Resilience</li>
+                            <li><input type="text" name="resilience1" id="resilience1"><label for="resilience1"></label>
+                            </li>
+                            <li><input type="text" name="resilience3" id="resilience3"><label for="resilience3"></label>
+                            </li>
+                            <li><input type="text" name="resilience5" id="resilience5"><label for="resilience5"></label>
+                            </li>
+                            <li><input type="text" name="resilience7" id="resilience7"><label for="resilience7"></label>
+                            </li>
+                            <li><input type="text" name="resilience9" id="resilience9"><label for="resilience9"></label>
+                            </li>
+                            <li><input type="text" name="resilience11" id="resilience11"><label
+                                    for="resilience11"></label></li>
+                            <li><input type="text" name="resilience13" id="resilience13"><label
+                                    for="resilience13"></label></li>
+                        </ul>
+                    </div>
+                    <div class="equipped-right">
+                        <ul role="list" class="source-list-right">
+                            <li>Source</li>
+                            <li><input type="text" name="source2" id="source2"><label for="source2"></label></li>
+                            <li><input type="text" name="source4" id="source4"><label for="source4"></label></li>
+                            <li><input type="text" name="source6" id="source6"><label for="source6"></label></li>
+                            <li><input type="text" name="source8" id="source8"><label for="source8"></label></li>
+                            <li><input type="text" name="source10" id="source10"><label for="source10"></label></li>
+                            <li><input type="text" name="source12" id="source12"><label for="source12"></label></li>
+                            <li><input type="text" name="source14" id="source14"><label for="source14"></label></li>
+                        </ul>
+                        <ul role="list" class="break-list-right">
+                            <li>Break</li>
+                            <li><input type="number" name="break2" id="break2"><label for="break2"></label></li>
+                            <li><input type="number" name="break4" id="break4"><label for="break4"></label></li>
+                            <li><input type="number" name="break6" id="break6"><label for="break6"></label></li>
+                            <li><input type="number" name="break8" id="break8"><label for="break8"></label></li>
+                            <li><input type="number" name="break10" id="break10"><label for="break10"></label></li>
+                            <li><input type="number" name="break12" id="break12"><label for="break12"></label></li>
+                            <li><input type="number" name="break14" id="break14"><label for="break14"></label></li>
+                        </ul>
+                        <ul role="list" class="armor-list-right">
+                            <li>Armor</li>
+                            <li><input type="number" name="armor2" id="armor2"><label for="armor2"></label></li>
+                            <li><input type="number" name="armor4" id="armor4"><label for="armor4"></label></li>
+                            <li><input type="number" name="armor6" id="armor6"><label for="armor6"></label></li>
+                            <li><input type="number" name="armor8" id="armor8"><label for="armor8"></label></li>
+                            <li><input type="number" name="armor10" id="armor10"><label for="armor10"></label></li>
+                            <li><input type="number" name="armor12" id="armor12"><label for="armor12"></label></li>
+                            <li><input type="number" name="armor14" id="armor14"><label for="armor14"></label></li>
+                        </ul>
+                        <ul role="list" class="resilience-list-right">
+                            <li>Resilience</li>
+                            <li><input type="text" name="resilience2" id="resilience2"><label for="resilience2"></label>
+                            </li>
+                            <li><input type="text" name="resilience4" id="resilience4"><label for="resilience4"></label>
+                            </li>
+                            <li><input type="text" name="resilience6" id="resilience6"><label for="resilience6"></label>
+                            </li>
+                            <li><input type="text" name="resilience8" id="resilience8"><label for="resilience8"></label>
+                            </li>
+                            <li><input type="text" name="resilience10" id="resilience10"><label
+                                    for="resilience10"></label></li>
+                            <li><input type="text" name="resilience12" id="resilience12"><label
+                                    for="resilience12"></label></li>
+                            <li><input type="text" name="resilience14" id="resilience14"><label
+                                    for="resilience14"></label></li>
+                        </ul>
+                    </div>
+                    <div class="armor">
+                        <ul role="list" class="armor-left">
+                            <li><label for="alt">Alternative</label><input type="number" name="alt" id="alt"></li>
+                            <li><label for="dodge">Dodge +<label for="dodge-bonus"></label><input type="number"
+                                        name="dodge-bonus" id="dodge-bonus"></label><input type="number" name="dodge"
+                                    id="dodge"></li>
+                            <li><label for="defend">Defend +<label for="defend-bonus"></label><input type="number"
+                                        name="defend-bonus" id="defend-bonus"></label><input type="number" name="defend"
+                                    id="defend"></li>
+                        </ul>
+                        <label for="main-armor">Main Armor</label><input type="number" name="main-armor"
+                            id="main-armor">
+                        <ul role="list" class="armor-right">
+                            <li><label for="both">Both +<label for="both-bonus"></label><input type="number"
+                                        name="both-bonus" id="both-bonus"></label><input type="number" name="both"
+                                    id="both"></li>
+                            <li><label for="block">Block +<label for="block-bonus"></label><input type="number"
+                                        name="block-bonus" id="block-bonus"></label><input type="number" name="block"
+                                    id="block"></li>
+                            <li><label for="all">All +<label for="all-bonus"></label><input type="number"
+                                        name="all-bonus" id="all-bonus"></label><input type="number" name="all"
+                                    id="all"></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="health">
+                <h2>Health</h2>
+                <section class="damage">
+                    <ul role="list" class="damage-titles">
+                        <li>Damage & Armor Level</li>
+                        <li>Damage Bars</li>
+                        <li>Effects</li>
+                        <li>Rest & Recovery</li>
+                    </ul>
+                    <div class="damage-armor-level">
+                        <div class="harm">
+                            <h4>Harm</h4>
+                            <p>A: <input type="number" name="harm-armor" id="harm-armor"><label
+                                    for="harm-armor"></label></p>
+                        </div>
+                        <div class="hurt">
+                            <h4>Hurt</h4>
+                            <p>A: <input type="number" name="hurt-armor" id="hurt-armor"><label
+                                    for="hurt-armor"></label></p>
+                        </div>
+                        <div class="wound">
+                            <h4>Wound</h4>
+                            <p>A: <input type="number" name="wound-armor" id="wound-armor"><label
+                                    for="wound-armor"></label></p>
+                        </div>
+                        <div class="injure">
+                            <h4>Injure</h4>
+                            <p>A: <input type="number" name="injure-armor" id="injure-armor"><label
+                                    for="injure-armor"></label></p>
+                        </div>
+                        <div class="dying">
+                            <h4>Dying</h4>
+                            <p>A: <input type="number" name="dying-armor" id="dying-armor"><label
+                                    for="dying-armor"></label></p>
+                        </div>
+                    </div>
+                    <div class="damage-bars">
+                        <div class="harm-bar">
+                            <input type="checkbox" name="harm1" id="harm1"><label for="harm1"></label>
+                            <input type="checkbox" name="harm2" id="harm2"><label for="harm2"></label>
+                            <input type="checkbox" name="harm3" id="harm3"><label for="harm3"></label>
+                            <input type="checkbox" name="harm4" id="harm4"><label for="harm4"></label>
+                            <input type="checkbox" name="harm5" id="harm5"><label for="harm5"></label>
+                            <input type="checkbox" name="harm6" id="harm6"><label for="harm6"></label>
+                        </div>
+                        <div class="hurt-bar">
+                            <input type="checkbox" name="hurt1" id="hurt1"><label for="hurt1"></label>
+                            <input type="checkbox" name="hurt2" id="hurt2"><label for="hurt2"></label>
+                            <input type="checkbox" name="hurt3" id="hurt3"><label for="hurt3"></label>
+                            <input type="checkbox" name="hurt4" id="hurt4"><label for="hurt4"></label>
+                            <input type="checkbox" name="hurt5" id="hurt5"><label for="hurt5"></label>
+                            <input type="checkbox" name="hurt6" id="hurt6"><label for="hurt6"></label>
+                        </div>
+                        <div class="wound-bar">
+                            <input type="checkbox" name="wound1" id="wound1"><label for="wound1"></label>
+                            <input type="checkbox" name="wound2" id="wound2"><label for="wound2"></label>
+                            <input type="checkbox" name="wound3" id="wound3"><label for="wound3"></label>
+                            <input type="checkbox" name="wound4" id="wound4"><label for="wound4"></label>
+                            <input type="checkbox" name="wound5" id="wound5"><label for="wound5"></label>
+                            <input type="checkbox" name="wound6" id="wound6"><label for="wound6"></label>
+                        </div>
+                        <div class="injure-bar">
+                            <input type="checkbox" name="injure1" id="injure1"><label for="injure1"></label>
+                            <input type="checkbox" name="injure2" id="injure2"><label for="injure2"></label>
+                            <input type="checkbox" name="injure3" id="injure3"><label for="injure3"></label>
+                            <input type="checkbox" name="injure4" id="injure4"><label for="injure4"></label>
+                        </div>
+                        <div class="dying-bar">
+                            <input type="checkbox" name="dying" id="dying"><label for="dying"></label>
+                            <input type="number" name="death-save" id="death-save"><label for="death-save"></label>
+                            <input type="number" name="death-cap" id="death-cap"><label for="death-cap"></label>
+                        </div>
+                    </div>
+                    <div class="damage-effects">
+                        <div class="harm-effect">
+                            <p>+ <input type="number" name="harm-effect" id="harm-effect"><label
+                                    for="harm-effect"></label></p>
+                            <h4>Fatigue</h4>
+                        </div>
+                        <div class="hurt-erffect">
+                            <p>+ <input type="number" name="hurt-erffect" id="hurt-erffect"><label
+                                    for="hurt-erffect"></label></p>
+                            <h4>Fatigue</h4>
+                        </div>
+                        <div class="wound-effect">
+                            <p>+ <input type="number" name="wound-effect" id="wound-effect"><label
+                                    for="wound-effect"></label></p>
+                            <h4>Stress</h4>
+                        </div>
+                        <div class="injure-effect">
+                            <h4>Injury Roll</h4>
+                            <p>+ <input type="number" name="injure-effect" id="injure-effect"><label
+                                    for="injure-effect"></label></p>
+                            <h4>Stress</h4>
+                        </div>
+                        <div class="dying-effect">
+                            <h4>Death Saves</h4>
+                            <p>+ <input type="number" name="dying-effect" id="dying-effect"><label
+                                    for="dying-effect"></label></p>
+                            <h4>Doom</h4>
+                        </div>
+                    </div>
+                    <div class="rest-recovery">
+                        <div class="harm-rr">
+                            <h4><input type="number" name="harm-time-rr" id="harm-time-rr"><label
+                                    for="harm-time-rr"></label> Hour</h4>
+                            <p>1d<input type="number" name="harm-rr" id="harm-rr"><label for="harm-rr"></label></p>
+                        </div>
+                        <div class="hurt-rr">
+                            <h4><input type="number" name="hurt-time-rr" id="hurt-time-rr"><label
+                                    for="hurt-time-rr"></label> Night</h4>
+                            <p>1d<input type="number" name="hurt-rr" id="hurt-rr"><label for="hurt-rr"></label></p>
+                        </div>
+                        <div class="wound-rr">
+                            <h4><input type="number" name="wound-time-rr" id="wound-time-rr"><label for="wound-time-rr">
+                                    Nights</h4>
+                            <p>1d<input type="number" name="wound-rr" id="wound-rr"><label for="wound-rr"></label>
+                            </p>
+                        </div>
+                        <div class="injure-rr">
+                            <h4><input type="number" name="injure-time-rr" id="injure-time-rr"><label
+                                    for="injure-time-rr"></label> Weeks</h4>
+                            <p>1d<input type="number" name="injure-rr" id="injure-rr"><label for="injure-rr"></label>
+                            </p>
+                        </div>
+                        <div class="dying-rr">
+                            <p><input type="number" name="death-rr" id="death-rr"><label for="death-rr"></label>Night
+                                per Death Save</p>
+                        </div>
+                </section>
+                <section class="exhaustion">
+                    <ul role="list" class="damage-titles">
+                        <li>Exhaustion & Fortitude</li>
+                        <li>Exhaustion Bars</li>
+                        <li>Effects</li>
+                        <li>Rest & Recovery</li>
+                    </ul>
+                    <div class="exhaustion-fortitude-level">
+                        <div class="fatigue">
+                            <h4>Fatigue</h4>
+                            <p>F: <input type="number" name="fatigue-fortitude" id="fatigue-fortitude"><label
+                                    for="fatigue-fortitude"></label></p>
+                        </div>
+                        <div class="stress">
+                            <h4>Stress</h4>
+                            <p>F: <input type="number" name="stress-fortitude" id="stress-fortitude"><label
+                                    for="stress-fortitude"></label></p>
+                        </div>
+                        <div class="doom">
+                            <h4>Doom</h4>
+                            <p>F: <input type="number" name="doom-fortitude" id="doom-fortitude"><label
+                                    for="doom-fortitude"></label></p>
+                        </div>
+                    </div>
+                    <div class="exhaustion-bars">
+                        <div class="fatigue-bar">
+                            <input type="checkbox" name="fatigue1" id="fatigue1"><label for="fatigue1"></label>
+                            <input type="checkbox" name="fatigue2" id="fatigue2"><label for="fatigue2"></label>
+                            <input type="checkbox" name="fatigue3" id="fatigue3"><label for="fatigue3"></label>
+                            <input type="checkbox" name="fatigue4" id="fatigue4"><label for="fatigue4"></label>
+                            <input type="checkbox" name="fatigue5" id="fatigue5"><label for="fatigue5"></label>
+                            <input type="checkbox" name="fatigue6" id="fatigue6"><label for="fatigue6"></label>
+                        </div>
+                        <div class="stress-bar">
+                            <input type="checkbox" name="stress1" id="stress1"><label for="stress1"></label>
+                            <input type="checkbox" name="stress2" id="stress2"><label for="stress2"></label>
+                            <input type="checkbox" name="stress3" id="stress3"><label for="stress3"></label>
+                            <input type="checkbox" name="stress4" id="stress4"><label for="stress4"></label>
+                            <input type="checkbox" name="stress5" id="stress5"><label for="stress5"></label>
+                            <input type="checkbox" name="stress6" id="stress6"><label for="stress6"></label>
+                        </div>
+                        <div class="doom-bar">
+                            <input type="checkbox" name="doom1" id="doom1"><label for="doom1"></label>
+                            <input type="checkbox" name="doom2" id="doom2"><label for="doom2"></label>
+                            <input type="checkbox" name="doom3" id="doom3"><label for="doom3"></label>
+                            <input type="checkbox" name="doom4" id="doom4"><label for="doom4"></label>
+                            <input type="checkbox" name="doom5" id="doom5"><label for="doom5"></label>
+                            <input type="checkbox" name="doom6" id="doom6"><label for="doom6"></label>
+                        </div>
+                    </div>
+                    <div class="exhaustion-effects">
+                        <div class="fatigue-effect">
+                            <p>+ <input type="number" name="fatigue-effect" id="fatigue-effect"><label
+                                    for="fatigue-effect"></label>Stress</p>
+                            <p>+ <input type="number" name="dis-effect1" id="dis-effect1"><label
+                                    for="dis-effect1"></label>Dis</p>
+                        </div>
+                        <div class="stress-erffect">
+                            <p>+ <input type="number" name="stress-erffect" id="stress-erffect"><label
+                                    for="stress-erffect"></label>Doom</p>
+                            <p>+ <input type="number" name="dis-effect2" id="dis-effect2"><label
+                                    for="dis-effect2"></label>Dis</p>
+                        </div>
+                        <div class="wound-effect">
+                            <p>+ <input type="number" name="wound-effect" id="wound-effect"><label
+                                    for="wound-effect"></label>Doom Roll</p>
+                            <p>+ <input type="number" name="dis-effect3" id="dis-effect3"><label
+                                    for="dis-effect3"></label>Dis</p>
+                        </div>
+                    </div>
+                    <div class="rest-recovery">
+                        <div class="fatigue-rr">
+                            <h4><input type="number" name="fatigue-time-rr" id="fatigue-time-rr"><label
+                                    for="fatigue-time-rr"></label> Hour</h4>
+                            <p>1d<input type="number" name="fatigue-rr" id="fatigue-rr"><label for="fatigue-rr"></label>
+                            </p>
+                        </div>
+                        <div class="stress-rr">
+                            <h4><input type="number" name="stress-time-rr" id="stress-time-rr"><label
+                                    for="stress-time-rr"></label> Night</h4>
+                            <p>1d<input type="number" name="stress-rr" id="stress-rr"><label for="stress-rr"></label>
+                            </p>
+                        </div>
+                        <div class="doom-rr">
+                            <h4><input type="number" name="doom-time-rr" id="doom-time-rr"><label for="doom-time-rr">
+                                    Nights</h4>
+                            <p>1d<input type="number" name="doom-rr" id="doom-rr"><label for="doom-rr"></label>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Buffs & Debuffs</h3>
+                    <ul role="list" class="buffs-debuffs">
+                        <li class="buff-debuff1"> <input type="text" id="buff-debuff1" name="buff-debuff1"></li>
+                        <li class="buff-debuff2"> <input type="text" id="buff-debuff2" name="buff-debuff2"></li>
+                        <li class="buff-debuff3"> <input type="text" id="buff-debuff3" name="buff-debuff3"></li>
+                        <li class="buff-debuff4"> <input type="text" id="buff-debuff4" name="buff-debuff4"></li>
+                        <li class="buff-debuff5"> <input type="text" id="buff-debuff5" name="buff-debuff5"></li>
+                        <li class="buff-debuff6"> <input type="text" id="buff-debuff6" name="buff-debuff6"></li>
+                        <li class="buff-debuff7"> <input type="text" id="buff-debuff7" name="buff-debuff7"></li>
+                        <li class="buff-debuff8"> <input type="text" id="buff-debuff8" name="buff-debuff8"></li>
+                        <li class="buff-debuff9"> <input type="text" id="buff-debuff9" name="buff-debuff9"></li>
+                        <li class="buff-debuff10"> <input type="text" id="buff-debuff10" name="buff-debuff10"></li>
+                        <li class="buff-debuff11"> <input type="text" id="buff-debuff11" name="buff-debuff11"></li>
+                        <li class="buff-debuff12"> <input type="text" id="buff-debuff12" name="buff-debuff12"></li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+        <!-- GEAR -->
+        <article class="gear sheet">
+            <header class="article-header"></header>
+            <section class=""></section>
+        </article>
+    </main>
+</body>
+
+</html>
